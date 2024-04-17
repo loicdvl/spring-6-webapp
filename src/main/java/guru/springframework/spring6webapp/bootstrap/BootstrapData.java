@@ -48,6 +48,8 @@ public class BootstrapData implements CommandLineRunner {
 
         savedEric.getBooks().add(savedDDD);
         savedRod.getBooks().add(savedNoEJB);
+        savedDDD.getAuthors().add(savedEric);
+        savedNoEJB.getAuthors().add(savedRod);
 
         Publisher penguinRandomHouse = new Publisher();
         penguinRandomHouse.setPublisherName("Penguin Random House");
